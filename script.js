@@ -21,10 +21,12 @@ reset.addEventListener('click', () => {
 
 const checkHigher = () => {
   const getCounts = document.querySelectorAll('.count')
-  if (getCounts[0].innerText > getCounts[1].innerText) {
+  let homeCount = parseInt(getCounts[0].innerText)
+  let awayCount = parseInt(getCounts[1].innerText)
+  if (homeCount > awayCount) {
     getCounts[0].classList.add('active')
     getCounts[1].classList.remove('active')
-  } else if (getCounts[1].innerText > getCounts[0].innerText) {
+  } else if (awayCount > homeCount) {
     getCounts[1].classList.add('active')
     getCounts[0].classList.remove('active')
   } else {
