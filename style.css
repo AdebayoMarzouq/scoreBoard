@@ -19,6 +19,10 @@ h6 {
 
 body {
   font-family: 'Verdana', sans-serif;
+  background-image: url('./christian-rebero-twahirwa-ggtFONGaWTo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +33,7 @@ body {
 }
 
 .container {
-  background-color: #1B244A;
+  background-color: rgb(27, 36, 74, 0.6);
   display: flex;
   width: 575px;
   height: 385px;
